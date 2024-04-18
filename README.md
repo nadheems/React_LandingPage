@@ -127,64 +127,6 @@ const Navbar = () => {
     )
 }
 
-export default Navbar;
-```
-
-
-
-:heavy_check_mark: Utilização de sx e breakpoints em Material UI
-
-O que é [sx](https://mui.com/system/getting-started/the-sx-prop/)?
-
-A propriedade sx permite que você trabalhe com um superconjunto de CSS que empacota todas as funções de estilo expostas em @mui/system. Você pode especificar qualquer CSS válido usando este suporte, bem como muitas propriedades com reconhecimento de tema que são exclusivas do MUI System.
-
-
-```
-<Box component='article'>
-    sx={{
-        px: 4,
-    }}
-</Box>
-
-
-<Grid item xs={12} sm={4} md={6}>
-    sx={{
-        order: {xs: 4, sm: 4, md: 3}
-    }}
-</Grid>
-```
-
-
-:heavy_check_mark: Uso de Componentes reutilizáveis em React;
-
-Conteúdo do componente Title:
-
-```
-import { Typography } from '@mui/material'
-import React from 'react'
-
-const Title = ({ text, textAlign }) => {
-  return (
-    <Typography 
-    variant='h4'
-    component='h3'
-    sx={{ 
-      fontWeight: '700',
-      textAlign: textAlign,
-   }}
-    >
-      {text}
-    </Typography>
-  )
-}
-
-export default Title;
-```
-
-
-:heavy_check_mark: Utilização de Styled-Components com Material UI
-
-
 
 
 `npm run build`
